@@ -1,3 +1,4 @@
+//  App.js component is rendering here
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
