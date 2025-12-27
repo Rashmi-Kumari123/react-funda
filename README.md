@@ -10,6 +10,9 @@ How we manage state and handle click :
 I want as book ticket button clicked by someone, increase total booking count dynamically
 we use useState hook to manage state
 useState holds the data temporarily but not permanently
+
+# How we can render list of movies(1000) from backend in UI using map function
+
 ## Available Scripts
 
 In the project directory, you can run:

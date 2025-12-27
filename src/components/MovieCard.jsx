@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button';
 import { useState } from 'react';
-const MovieCard = ({ title }) => {
+const MovieCard = ({ title, image }) => {
   const [bookingCount, setBooking] = useState(1) //setBooking is function to update the state and bookingCount is just variable
   const handleBookingClick = () => {
     setBooking(bookingCount + 1)
@@ -11,7 +11,7 @@ const MovieCard = ({ title }) => {
   }
   return (
     <div className='border p-5 space-y-5'>
-      <img className="w-96 rounded-md" src='https://univ.sitare.org/static/media/logo.5b7a3e74824b376d41e8.png' alt='Movie poster' />
+      <img className="w-96 rounded-md" src={image} alt='Movie poster' />
 
       <h1 className='text-xl font-bold'>{title}</h1>
       <h1 className='text-xl font-semibold'> Total Booking : {bookingCount}</h1>
