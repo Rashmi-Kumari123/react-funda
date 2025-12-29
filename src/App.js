@@ -4,9 +4,15 @@ import "./App.css";
 import { MovieList } from "./components/MovieList";
 import Navbar from "./components/Navbar/Navbar";
 import Login from "./components/Login/Login";
+import { useEffect } from "react";
 
 const title = "Sports Movie List";
 function App() {
+  useEffect(()=>{
+    console.log("inside useEffect")
+  })
+  console.log("first line");
+  console.log("second line");
   return (
     <div >
       <Navbar/>
