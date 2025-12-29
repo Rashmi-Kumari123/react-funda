@@ -26,7 +26,7 @@ Learned to create multiple pages and how to navigate one page from another page 
 - Like if I am hovering on login, it should redirect to login page
 
 ### How to handle form in react
-Learned how to use handleChange and handleSubmit while filling login form 
+Learned how to use handleChange and handleSubmit while filling login form. one option is create separate state for each field but other option is just use single state.
 
 
 ### Application Entry Point
@@ -34,6 +34,13 @@ Inside `index.js` we are rendering whole app.
 
 ### Router Setup
 If we want route should available for our whole application, we need to wrap App component inside `BrowserRouter` and this `BrowserRouter` is coming from `react-router-dom`.
+
+### How to handle form using formik library
+Formik is a small group of React components and hooks for building forms in React. It helps with the three most annoying parts:
+
+-Getting values in and out of form state
+-Validation and error messages
+-Handling form submission
 
 ---
 
