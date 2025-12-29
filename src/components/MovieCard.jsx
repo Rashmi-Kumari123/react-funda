@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button';
 import { useState } from 'react';
+import { useEffect } from 'react';
 const MovieCard = ({ title, image }) => {
   const [bookingCount, setBooking] = useState(1) //setBooking is function to update the state and bookingCount is just variable
   const handleBookingClick = () => {
@@ -9,6 +10,9 @@ const MovieCard = ({ title, image }) => {
   const handleCancelBooking = () => {
     setBooking(bookingCount - 1)
   }
+  useEffect(()=>{
+      console.log("booking count get updated")
+    }, [bookingCount])
   return (
     <div className='border p-5 space-y-5'>
       <img className="w-96 rounded-md" src={image} alt='Movie poster' />

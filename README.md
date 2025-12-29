@@ -25,7 +25,7 @@ React apps are made out of components. A component is a piece of the UI (user in
 
 ### Rendering Lists
 
-How we can render list of movies from backend to UI using `map` function.
+How we can render list of movies from backend to UI using `map` function and keys will be in list.
 
 ### Routing
 
@@ -46,6 +46,17 @@ Formik is a small group of React components and hooks for building forms in Reac
 - Getting values in and out of form state
 - Validation and error messages
 - Handling form submission without you having to write `onChange` and `onSubmit` logic - Formik will do it easily
+
+### useEffect
+
+`useEffect` is a React hook used to perform side effects in function components. A side effect can be anything that interacts with something outside the component, like:
+
+- Fetching data from an API/backend - we write logic for that inside `useEffect`
+- Subscribing to a webSocket
+- Manipulating the DOM
+- Setting up event listeners
+
+In React, after rendering all the UI, then `useEffect` will be invoked.
 
 ### Application Entry Point
 
